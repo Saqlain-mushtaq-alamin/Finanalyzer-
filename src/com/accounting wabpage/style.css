@@ -267,21 +267,33 @@ body {
 }
 
 .footer_logo_area {
-  flex: 1;
-  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 150px;       /* Enough to fit a 120px image + some margin */
+  height: 90px;       /* Let it grow based on content (image + text) */
+
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc; /* optional: helps you *see* the size */
+  border-radius: 10px;    /* just for ✨ aesthetic */
 }
 
+
 .footer_logo {
+  align-items: center;
   width: 120px;
+  height: auto; /* maintain aspect ratio */
   margin-bottom: 10px;
 }
 
-.footer_tagline {
-  font-size: 13px;
-  color: #ccc;
-  max-width: 200px;
-}
 
+.footer_tagline {
+  font-size: 14px;
+  color: #555;
+}
 .footer_links {
   display: flex;
   flex-direction: column;
